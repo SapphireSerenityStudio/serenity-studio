@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#090f27">
   <meta name="description" content="Serenity Studio — a creative universe where voices come to life.">
   <title>Serenity Studio | Where Voices Come to Life</title>
+  <link rel="icon" type="image/svg+xml" href="assets/serenity-icon.svg">
   <style>
     :root{color-scheme:dark;--ink:#f6f4ff;--muted:#c9c7e4;--blue:#83baff;--violet:#d2b2ff}
     *{box-sizing:border-box}
@@ -15,13 +16,13 @@
     a{color:inherit}
     .shell{position:relative;z-index:1;max-width:1100px;margin:auto;padding:0 24px}
     header{display:flex;align-items:center;justify-content:space-between;padding:28px 0;gap:18px}
-    .brand{font-family:Georgia,serif;font-size:1.35rem;letter-spacing:.05em;text-decoration:none}
-    .brand span{color:var(--blue)}
+    .brand{display:flex;align-items:center;text-decoration:none;max-width:min(64vw,370px)}.brand img{display:block;width:100%;height:auto}
+    
     nav a{text-decoration:none;color:var(--muted);font-size:.95rem}
     nav a:hover,nav a:focus-visible{color:white}
     main{text-align:center}
     .hero{padding:clamp(100px,17vh,190px) 0 130px}
-    .symbol{font-size:3.3rem;filter:drop-shadow(0 0 22px #b0aaff)}
+    .symbol{display:block;width:clamp(135px,28vw,190px);height:auto;margin:0 auto;filter:drop-shadow(0 0 30px #9d9aff55)}
     .eyebrow{text-transform:uppercase;letter-spacing:.35em;color:#b6c8ff;font-size:.72rem;margin:32px 0 20px}
     h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(3.2rem,9vw,6.5rem);line-height:1.08;letter-spacing:-.04em;margin:0;background:linear-gradient(120deg,#fff,#b7d9ff 55%,#d9b9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
     .tagline{font-family:Georgia,serif;font-size:clamp(1.3rem,3.5vw,2rem);color:#e5dcff;margin:24px 0}
@@ -32,28 +33,28 @@
     h2{font-family:Georgia,serif;font-weight:400;font-size:2rem;margin:0 0 16px}
     .about p{color:var(--muted);line-height:1.8;margin:0}
     footer{padding:30px 0 45px;text-align:center;border-top:1px solid #ffffff20;color:#a8a9ca;font-size:.85rem}
-    @media(max-width:500px){header{padding:22px 0}.brand{font-size:1.1rem}.hero{padding:100px 0 95px}.eyebrow{letter-spacing:.23em}section.about{padding:30px 22px}}
+    @media(max-width:500px){header{padding:22px 0}.brand{max-width:230px}.hero{padding:100px 0 95px}.eyebrow{letter-spacing:.23em}section.about{padding:30px 22px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
   </style>
 </head>
 <body>
   <div class="shell">
     <header>
-      <a class="brand" href="#home" aria-label="Serenity Studio home">✧ Serenity <span>Studio</span></a>
+      <a class="brand" href="#home" aria-label="Serenity Studio home"><img src="assets/serenity-logo.svg" alt="Serenity Studio — Where Voices Come to Life" width="370" height="85"></a>
       <nav aria-label="Main navigation"><a href="#about">Our Universe</a></nav>
     </header>
     <main id="home">
       <div class="hero">
-        <div class="symbol" aria-hidden="true">✧</div>
-        <p class="eyebrow">A universe of creativity</p>
+        <img class="symbol" src="assets/serenity-icon.svg" alt="" width="190" height="190">
+        <p class="eyebrow">Virtual singers · Music · Vocal synthesis</p>
         <h1>Serenity Studio</h1>
         <p class="tagline">Where Voices Come to Life</p>
-        <p class="intro">Every voice holds a world of possibilities. Welcome to a space for imagination, expression, and the magic of bringing new sounds to life.</p>
+        <p class="intro">Explore a celestial universe of virtual singers, UTAU voicebanks, music, and vocal synthesis projects — created by Serenity.</p>
         <a class="button" href="#about">Enter Our Universe &nbsp;✦</a>
       </div>
       <section class="about" id="about">
         <h2>A New Constellation Is Forming</h2>
-        <p>Serenity Studio is taking its first steps. This is the beginning of a creative home for voices, music, and the ideas that connect them. More wonders are on their way.</p>
+        <p>Serenity Studio is taking its first steps. This is the beginning of a creative home for virtual singers, original music, UTAU, and the evolving VOXLUMINA project. More wonders are on their way.</p>
       </section>
     </main>
     <footer>✧ Serenity Studio · Made for creative souls ✧</footer>
