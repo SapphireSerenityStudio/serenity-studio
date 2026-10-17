@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090f27">
+  <meta name="description" content="Serenity Studio — a creative universe where voices come to life.">
+  <title>Serenity Studio | Where Voices Come to Life</title>
+  <style>
+    :root{color-scheme:dark;--ink:#f6f4ff;--muted:#c9c7e4;--blue:#83baff;--violet:#d2b2ff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(ellipse at 50% 18%,#26366a 0%,#111b3b 38%,#080d20 80%);overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.65;background-image:radial-gradient(1px 1px at 12% 18%,#fff 99%,transparent),radial-gradient(2px 2px at 73% 13%,#d7d5ff 99%,transparent),radial-gradient(1px 1px at 45% 67%,#fff 99%,transparent),radial-gradient(2px 2px at 85% 77%,#a8c9ff 99%,transparent),radial-gradient(1px 1px at 24% 83%,#fff 99%,transparent);background-size:310px 280px}
+    a{color:inherit}
+    .shell{position:relative;z-index:1;max-width:1100px;margin:auto;padding:0 24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:28px 0;gap:18px}
+    .brand{font-family:Georgia,serif;font-size:1.35rem;letter-spacing:.05em;text-decoration:none}
+    .brand span{color:var(--blue)}
+    nav a{text-decoration:none;color:var(--muted);font-size:.95rem}
+    nav a:hover,nav a:focus-visible{color:white}
+    main{text-align:center}
+    .hero{padding:clamp(100px,17vh,190px) 0 130px}
+    .symbol{font-size:3.3rem;filter:drop-shadow(0 0 22px #b0aaff)}
+    .eyebrow{text-transform:uppercase;letter-spacing:.35em;color:#b6c8ff;font-size:.72rem;margin:32px 0 20px}
+    h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(3.2rem,9vw,6.5rem);line-height:1.08;letter-spacing:-.04em;margin:0;background:linear-gradient(120deg,#fff,#b7d9ff 55%,#d9b9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .tagline{font-family:Georgia,serif;font-size:clamp(1.3rem,3.5vw,2rem);color:#e5dcff;margin:24px 0}
+    .intro{max-width:610px;margin:0 auto 38px;color:var(--muted);font-size:1.05rem;line-height:1.8}
+    .button{display:inline-block;padding:14px 28px;border:1px solid #a2b9ff;border-radius:999px;text-decoration:none;background:#a7bbff17;transition:background .2s,transform .2s}
+    .button:hover,.button:focus-visible{background:#a7bbff35;transform:translateY(-2px)}
+    section.about{max-width:760px;margin:0 auto 110px;padding:40px 30px;border:1px solid #c1c5ff32;border-radius:24px;background:#e1d8ff0b;backdrop-filter:blur(8px)}
+    h2{font-family:Georgia,serif;font-weight:400;font-size:2rem;margin:0 0 16px}
+    .about p{color:var(--muted);line-height:1.8;margin:0}
+    footer{padding:30px 0 45px;text-align:center;border-top:1px solid #ffffff20;color:#a8a9ca;font-size:.85rem}
+    @media(max-width:500px){header{padding:22px 0}.brand{font-size:1.1rem}.hero{padding:100px 0 95px}.eyebrow{letter-spacing:.23em}section.about{padding:30px 22px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="#home" aria-label="Serenity Studio home">✧ Serenity <span>Studio</span></a>
+      <nav aria-label="Main navigation"><a href="#about">Our Universe</a></nav>
+    </header>
+    <main id="home">
+      <div class="hero">
+        <div class="symbol" aria-hidden="true">✧</div>
+        <p class="eyebrow">A universe of creativity</p>
+        <h1>Serenity Studio</h1>
+        <p class="tagline">Where Voices Come to Life</p>
+        <p class="intro">Every voice holds a world of possibilities. Welcome to a space for imagination, expression, and the magic of bringing new sounds to life.</p>
+        <a class="button" href="#about">Enter Our Universe &nbsp;✦</a>
+      </div>
+      <section class="about" id="about">
+        <h2>A New Constellation Is Forming</h2>
+        <p>Serenity Studio is taking its first steps. This is the beginning of a creative home for voices, music, and the ideas that connect them. More wonders are on their way.</p>
+      </section>
+    </main>
+    <footer>✧ Serenity Studio · Made for creative souls ✧</footer>
+  </div>
+</body>
+</html>
